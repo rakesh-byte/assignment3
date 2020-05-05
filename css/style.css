@@ -71,7 +71,10 @@ table {
 }
 
 .right, .left, .moto{
-    margin: 5px 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
 .donors{
@@ -97,7 +100,8 @@ table {
 }
 
 .header-lower .left{
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .active{
@@ -135,16 +139,13 @@ table {
 
 /* ===============Footer================== */
 .footer{
-    display: flex;
-    align-content: space-around;
-    margin: 0 5px;
+    margin-top: 30px;
     color: #666;
     background-color: #25272e;
     padding: 70px 10px 40px;
 
 }
 .contacts{
-    width: 40%;
     margin-right: 20px;
 }
 
@@ -153,9 +154,6 @@ table {
     line-height: 1em;
 }
 
-.links{width: 40%;
-    margin: 0 40px 0 20px;
-}
 hr{
     color:#f5f5f5;
 }
@@ -173,6 +171,10 @@ hr{
     background: blue;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.footer h5{
+    color: #f7f8fa;
 }
 
 
@@ -199,8 +201,6 @@ hr{
 }
 
 .intro{
-    width: 1100px;
-    height: 550px;
     margin:  20px 120px;
     padding: 30px;
 }
@@ -227,23 +227,18 @@ font-weight: bold;
     margin-right: auto;
 }
 
-.intro>p{
-    text-align: left;
-    width: 900px;
-    height: 440px;
+.intro p{
     font-size: 14px;
+    font-family: sans-serif;
     line-height: 1.5em;
     word-spacing: 5px;
-    margin: 0 40px;
+    text-align: justify;
     color: #666;
 
 }
 
 .estimation{
-    height: 300px;
     background-color: blue;
-    margin: 20px 0;
-
 }
 
 .justgreen{
@@ -281,8 +276,8 @@ font-weight: bold;
 div .alignment{
     width: 260px;
     height: 145px;
-    margin-top: 70px;
-    padding: 5px 0px;
+    margin: 30px auto;
+    padding: 5px 5px;
 }
 
 .ourwork{
@@ -297,9 +292,7 @@ div .alignment{
 }
 
 .services{
-    width: 1000px !important;
-    height: 670px;
-    margin: 10px 190px;
+    margin: 40px 30px;
     box-sizing: border-box;
     
 }
@@ -310,15 +303,22 @@ div .content-center{
     margin: 20px 0px;
 }
 
-.content-center img{
+.card{
+    width: 350px;
+    height: 170px;
+    margin:5px 20px;
+}
+
+.card img{
     width: 70px;
     height: 70px;
     display: block;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto
 }
 
-.content-center h4{
+.card h4{
     font-size: 20px;
     font-family: serif;
     color: #316DC3;
@@ -375,10 +375,6 @@ div .content-center{
     word-break: keep-all;
 }
 
-.image-gallery{
-    height: 450px;
-    margin-top: 30px;
-}
 
 .size{
     display: block;
@@ -386,9 +382,9 @@ div .content-center{
 }
 
 .images{
-    display: flex;
     margin-top: 30px;
-    
+    display: flex;
+    align-items: center;
 }
 
 .images img{
