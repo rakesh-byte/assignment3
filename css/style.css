@@ -50,6 +50,7 @@ table {
 *{
     font-family: sans-serif;
 }
+
 /* =============Header============== */
 .header-upper{
     background-color: #316dc3;
@@ -124,7 +125,7 @@ table {
     background-color:  #316dc3;
     border: 1px solid #316dc3;
     border-radius: 30px;
-}
+}bo
 
 .dropdown-menu a {
     padding: 7px 25px 7px 22px;
@@ -383,8 +384,9 @@ div .content-center{
 
 .images{
     margin-top: 30px;
+    margin-left: 50px;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .images img{
